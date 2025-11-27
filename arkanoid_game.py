@@ -178,8 +178,13 @@ def dibujar_escena(self) -> None:
     
     # Mensaje de fin de juego
     if self.end_message:
-        center_pos = (self.SCREEN_WIDTH // 2, self.SCREEN_HEIGHT // 2)
-        self.dibujar_texto(self.end_message, center_pos, grande=True)
+        fuente = self._obtener_fuente(grande=True)
+        ancho_texto, alto_texto = fuente.size(self.end_message)
+
+        x = (self.SCREEN_WIDTH - ancho_texto) // 2
+        y = (self.SCREEN_HEIGHT - alto_texto) // 2
+        
+        self.dibujar_texto(self.end_message, (x, y), grande=True)
 
 @arkanoid_method
 def run(self) -> None:
