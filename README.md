@@ -1,8 +1,8 @@
-Arkanoid M2 - Proyecto Python
+# Arkanoid M2 - Proyecto Python
 
 Esta es una implementación académica del clásico juego arcade Arkanoid, desarrollada utilizando Python y la biblioteca pygame para el hito de programación M2.
 
-*Descripción*
+## **Descripción**
 
 El objetivo del juego es despejar la pantalla de bloques rebotando una bola con una pala móvil. El jugador pierde una vida si la bola toca el suelo. El juego incluye:
 
@@ -14,7 +14,7 @@ El objetivo del juego es despejar la pantalla de bloques rebotando una bola con 
 
 - Diferentes tipos de bloques con distintas puntuaciones.
 
-*Requisitos*
+## **Requisitos**
 
 Para ejecutar este juego necesitas:
 
@@ -24,27 +24,28 @@ Para ejecutar este juego necesitas:
 
 Si no la tienes instalada, ejecuta:
 
-pip install pygame
+`pip install pygame`
 
 
-*Cómo Jugar*
+## **Cómo Jugar**
 
-Ejecución
+### Ejecución
 
 Para jugar al nivel por defecto (demo.txt):
 
-python arkanoid_game.py
+`python arkanoid_game.py`
 
 
 Para cargar un nivel personalizado (por ejemplo nivel_final):
 
-python arkanoid_game.py niveles/nivel_final.txt
+`python arkanoid_game.py niveles/nivel_final.txt`
 
 
-Controles
+### Controles
 
 Tecla: Flecha Izquierda / A
 Accion: Mover paleta a la izquierda
+
 
 Tecla: Flecha Derecha / D
 Accion: Mover paleta a la derecha
@@ -53,7 +54,7 @@ Accion: Mover paleta a la derecha
 Tecla: ESC
 Accion: Salir del juego
 
-*Leyenda del Mapa*
+## **Leyenda del Mapa**
 
 Los niveles se diseñan en archivos .txt usando estos símbolos:
 
@@ -65,7 +66,7 @@ Los niveles se diseñan en archivos .txt usando estos símbolos:
 
 - .: Espacio vacío.
 
-*Autor*
+## **Autor**
 
 David Espina Apellaniz
 
